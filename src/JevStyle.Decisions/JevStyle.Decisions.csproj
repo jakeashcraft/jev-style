@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>JevStyle.Decisions</RootNamespace>
+    <IsPackable>true</IsPackable>
+    <IsAotCompatible>true</IsAotCompatible>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>JevStyle.Decisions</PackageId>
+    <Version>0.1.0</Version>
+    <Description>Typed decisions with calibrated probabilities from Jev-style decision models served by LM Studio, llama.cpp or any OpenAI-compatible endpoint that returns top_logprobs.</Description>
+    <PackageTags>jev-style;decision;classification;calibration;lm-studio;llama.cpp;logprobs</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <InternalsVisibleTo Include="JevStyle.Decisions.Tests" />
+  </ItemGroup>
+
+</Project>

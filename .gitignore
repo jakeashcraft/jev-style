@@ -1,0 +1,13 @@
+# Build output
+bin/
+obj/
+artifacts/
+*.user
+.vs/
+.idea/
+TestResults/
+
+# Benchmark output and local secrets
+/results/
+/.env
+/.env.*
